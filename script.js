@@ -65,7 +65,7 @@ document.querySelector('.form').addEventListener('submit', (e) => {
     submitBtn.innerHTML = '<span>Enviando...</span>';
     submitBtn.disabled = true;
     
-    // O Netlify processará o formulário automaticamente
-    // Não precisamos de e.preventDefault() aqui
+    // Permitir que o Netlify processe o formulário
+    // Não usar e.preventDefault()
 });
 
