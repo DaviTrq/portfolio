@@ -57,15 +57,5 @@ document.querySelector('.cta-button').addEventListener('click', () => {
     });
 });
 
-// Funcionalidade do formulário de contato (Netlify)
-document.querySelector('.form').addEventListener('submit', (e) => {
-    // Feedback visual durante envio
-    const submitBtn = document.querySelector('.submit-btn');
-    const originalText = submitBtn.innerHTML;
-    submitBtn.innerHTML = '<span>Enviando...</span>';
-    submitBtn.disabled = true;
-    
-    // Permitir que o Netlify processe o formulário
-    // Não usar e.preventDefault()
-});
+// Formulário Netlify - sem JavaScript para não interferir
 
