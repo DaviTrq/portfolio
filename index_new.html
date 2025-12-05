@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Davi Torquato - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="logo" id="logo">D</div>
+    <button class="menu-toggle" id="menuToggle" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <div class="menu-overlay" id="menuOverlay">
+        <button class="menu-close" onclick="toggleMenu()">×</button>
+        <nav class="menu-nav">
+            <a href="#" class="menu-link" onclick="toggleMenu();">Home</a>
+            <a href="#" class="menu-link" onclick="toggleMenu();">Perfil</a>
+            <a href="#" class="menu-link" onclick="toggleMenu();">Projetos</a>
+        </nav>
+        <div class="menu-info">
+            <div class="menu-contact">
+                <p>DAVI TORQUATO</p>
+                <p>BRASIL</p>
+            </div>
+            <div class="menu-social">
+                <a href="#">INSTAGRAM</a>
+                <a href="#">LINKEDIN</a>
+                <a href="#">GITHUB</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="scroll-container">
+        <section class="section page-1">
+            <div class="home-name">
+                <div>DAVI</div>
+                <div>TORQUATO.</div>
+                <div class="home-subtitle" style="padding-left: 1rem;">Portfolio's</div>
+            </div>
+        </section>
+        <section class="section gap-1">
+            <div class="perfil-label">PERFIL</div>
+            <div class="perfil-content">
+                <h2>Sobre mim</h2>
+                <p>Técnico em Informática formado, focado no desenvolvimento de soluções práticas e eficientes. Tenho conhecimentos em programação, banco de dados e desenvolvimento de software. Sempre valorizei design e experiência do usuário, buscando criar aplicações bem estruturadas, funcionais e visualmente agradáveis.</p>
+                <h3 style="font-size: 18px; font-weight: 700; margin-bottom: 10px; margin-top: 8px;">Hard Skills:</h3>
+                <div class="hard-skills">
+                    <div class="skill-item">
+                        <img src="csharp_plain_logo_icon_146577.webp" alt="C#" class="skill-icon" width="32" height="32">
+                        <span>C#</span>
+                    </div>
+                    <div class="skill-item">
+                        <svg class="skill-icon" viewBox="0 0 32 32" width="32" height="32">
+                            <rect fill="#F7DF1E" width="32" height="32"/>
+                            <text x="16" y="21" font-size="16" text-anchor="middle" fill="#000" font-family="Consolas,monospace" font-weight="700">JS</text>
+                        </svg>
+                        <span>JAVASCRIPT</span>
+                    </div>
+                    <div class="skill-item">
+                        <img src="PHP-logo.svg.png" alt="PHP" class="skill-icon" style="width: 48px; height: 32px; object-fit: contain;">
+                        <span>PHP</span>
+                    </div>
+                    <div class="skill-item">
+                        <img src="Laravel.svg.png" alt="Laravel" class="skill-icon" width="32" height="32">
+                        <span>LARAVEL</span>
+                    </div>
+                    <div class="skill-item">
+                        <svg class="skill-icon" viewBox="0 0 32 32" width="32" height="32">
+                            <path fill="#E34F26" d="M5.902 27.201L3.655 2h24.69l-2.25 25.197L15.985 30 5.902 27.201z"/>
+                            <path fill="#EF652A" d="M16 27.858l8.17-2.265 1.922-21.532H16v23.797z"/>
+                            <path fill="#EBEBEB" d="M16 13.407h-4.09l-.282-3.165H16V7.151H8.25l.074.83.759 8.517H16v-3.091zm0 8.027l-.014.004-3.442-.929-.22-2.465H9.221l.433 4.852 6.332 1.758.014-.004v-3.216z"/>
+                            <path fill="#FFF" d="M15.989 13.407v3.091h3.806l-.358 4.009-3.448.93v3.216l6.337-1.757.046-.522.726-8.137.076-.83h-7.185zm0-6.256v3.091h7.466l.062-.694.141-1.567.074-.83h-7.743z"/>
+                        </svg>
+                        <span>HTML5 E CSS3</span>
+                    </div>
+                    <div class="skill-item">
+                        <img src="mysql-logo-svgrepo-com.svg" alt="MySQL" class="skill-icon" width="32" height="32">
+                        <span>MYSQL</span>
+                    </div>
+                    <div class="skill-item">
+                        <img src="Tux.svg.png" alt="Linux" class="skill-icon" width="32" height="32">
+                        <span>LINUX</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section page-2">
+            <div class="projeto-label">PROJETOS</div>
+            <div class="projeto-content">
+                <a class="github-link" href="https://github.com/DaviTrq/Artsync" target="_blank" rel="noopener">
+                    <img src="artsync.png" alt="Artsync" class="perfil-image" />
+                </a>
+                <div class="projeto-text">
+                    <div style="display: flex; align-items: center; justify-content: center; gap: 12px; margin-bottom: 12px;">
+                        <h2 style="margin: 0;">Artsync</h2>
+                        <a class="github-btn" href="https://github.com/DaviTrq/Artsync" target="_blank" rel="noopener" aria-label="Abrir repositório no GitHub">
+                            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
+                                <path fill="currentColor" d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.38 7.86 10.9.57.1.78-.25.78-.55 0-.27-.01-1-.01-1.96-3.2.69-3.88-1.54-3.88-1.54-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.71.08-.71 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.56-.29-5.26-1.28-5.26-5.73 0-1.27.45-2.31 1.19-3.13-.12-.29-.52-1.45.11-3.02 0 0 .97-.31 3.18 1.19.92-.26 1.9-.39 2.88-.39.98 0 1.96.13 2.88.39 2.21-1.5 3.18-1.19 3.18-1.19.63 1.57.23 2.73.11 3.02.74.82 1.19 1.86 1.19 3.13 0 4.46-2.7 5.44-5.28 5.72.41.36.78 1.08.78 2.18 0 1.57-.01 2.84-.01 3.23 0 .3.2.66.79.55C20.21 21.38 23.5 17.08 23.5 12 23.5 5.65 18.35.5 12 .5z"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <p>Feito como projeto de fim de ano do Colegio Cotemig, o Artsync é uma plataforma web/rede social gratuita pensada para artistas independentes, onde é possível gerenciar portfólios, organizar eventos, trocar conhecimentos com outros criativos e receber insights personalizados de carreira por meio de inteligência artificial. O projeto foi desenvolvido com arquitetura MVC, utilizando PHP, MySQL e CSS, além da aplicação do padrão de projeto Singleton para garantir melhor organização e controle das instâncias.</p>
+                    <div style="display: flex; gap: 15px; justify-content: center; margin-top: 15px;">
+                        <img src="PHP-logo.svg.png" alt="PHP" style="width: 48px; height: 32px; object-fit: contain;">
+                        <img src="mysql-logo-svgrepo-com.svg" alt="MySQL" width="32" height="32">
+                        <svg viewBox="0 0 32 32" width="32" height="32">
+                            <path fill="#1572B6" d="M5.902 27.201L3.655 2h24.69l-2.25 25.197L15.985 30 5.902 27.201z"/>
+                            <path fill="#33A9DC" d="M16 27.858l8.17-2.265 1.922-21.532H16v23.797z"/>
+                            <path fill="#FFF" d="M16 13.191h4.09l.282-3.165H16V6.935h7.75l-.074.83-.759 8.517H16v-3.091zm0 8.567l-.014.004-3.442-.929-.22-2.465H9.221l.433 4.852 6.332 1.758.014-.004v-3.216z"/>
+                            <path fill="#EBEBEB" d="M16.018 13.191v3.091h-3.806l-.358 4.009 3.448.93.014-.004v3.216l-6.337-1.757-.046-.522-.726-8.137-.076-.83h7.887v.004zm-.018-6.256v3.091H8.25l-.062-.694-.141-1.567-.074-.83h8.007z"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section gap-2">
+            <div class="contato-label">CONTATO</div>
+            <div class="contato-content">
+                <h2>Entre em contato</h2>
+                <div class="contato-links">
+                    <a href="mailto:davitrqto@gmail.com" class="contato-item">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M22 6l-10 7L2 6" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>davitrqto@gmail.com</span>
+                    </a>
+                    <a href="https://linkedin.com/in/davi-torquato" target="_blank" rel="noopener" class="contato-item">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="#fff">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://github.com/DaviTrq" target="_blank" rel="noopener" class="contato-item">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="#fff">
+                            <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.38 7.86 10.9.57.1.78-.25.78-.55 0-.27-.01-1-.01-1.96-3.2.69-3.88-1.54-3.88-1.54-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.71.08-.71 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.56-.29-5.26-1.28-5.26-5.73 0-1.27.45-2.31 1.19-3.13-.12-.29-.52-1.45.11-3.02 0 0 .97-.31 3.18 1.19.92-.26 1.9-.39 2.88-.39.98 0 1.96.13 2.88.39 2.21-1.5 3.18-1.19 3.18-1.19.63 1.57.23 2.73.11 3.02.74.82 1.19 1.86 1.19 3.13 0 4.46-2.7 5.44-5.28 5.72.41.36.78 1.08.78 2.18 0 1.57-.01 2.84-.01 3.23 0 .3.2.66.79.55C20.21 21.38 23.5 17.08 23.5 12 23.5 5.65 18.35.5 12 .5z"/>
+                        </svg>
+                        <span>GitHub</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="section final-white" id="whiteSection">
+            <div class="vertical-sections">
+                <div class="v-section v1"><h2>SEÇÃO 1</h2></div>
+                <div class="v-section v2"><h2>SEÇÃO 2</h2></div>
+                <div class="v-section v3"><h2>SEÇÃO 3</h2></div>
+                <div class="v-section v4"><h2>SEÇÃO 4</h2></div>
+            </div>
+        </section>
+    </div>
+
+    <div class="scroll-indicator-home" id="scrollIndicator">
+        <svg width="30" height="50" viewBox="0 0 30 50">
+            <rect x="10" y="10" width="10" height="25" rx="5" fill="none" stroke="#000" stroke-width="2"/>
+            <circle cx="15" cy="18" r="2" fill="#000">
+                <animate attributeName="cy" values="18;28;18" dur="1.5s" repeatCount="indefinite"/>
+            </circle>
+        </svg>
+        <p>SITE INTERATIVO</p>
+    </div>
+
+    <script>
+        const sections = document.querySelectorAll('.section');
+        const menuToggle = document.getElementById('menuToggle');
+        let ticking = false;
+        
+        function updateSections() {
+            const scrollY = window.scrollY;
+            const vh = window.innerHeight;
+            
+            let w = [55, 20, 15, 10, 0];
+            
+            if (scrollY < vh * 0.6) {
+                const p = scrollY / (vh * 0.6);
+                w[0] = 55 - (55 * p);
+                w[1] = 20 + (65 * p);
+                w[2] = 15 + (5 * p);
+                w[3] = 10 + (5 * p);
+                w[4] = 0;
+            }
+            else if (scrollY < vh * 1.1) {
+                const p = (scrollY - vh * 0.6) / (vh * 0.5);
+                w[0] = 0;
+                w[1] = 85 - (85 * p);
+                w[2] = 20 + (65 * p);
+                w[3] = 15;
+                w[4] = 0;
+            }
+            else if (scrollY < vh * 2.25) {
+                const p = (scrollY - vh * 1.1) / (vh * 1.15);
+                w[0] = 0;
+                w[1] = 0;
+                w[2] = 85 - (85 * p);
+                w[3] = 20 + (45 * p);
+                w[4] = 0 + (35 * p);
+            }
+            else if (scrollY < vh * 2.75) {
+                const p = (scrollY - vh * 2.25) / (vh * 0.5);
+                w[0] = 0;
+                w[1] = 0;
+                w[2] = 0;
+                w[3] = 65 - (65 * p);
+                w[4] = 35 + (65 * p);
+                
+                const vSections = document.querySelectorAll('.v-section');
+                vSections[1].style.transform = 'translateY(100vh)';
+                vSections[2].style.transform = 'translateY(100vh)';
+                vSections[3].style.transform = 'translateY(100vh)';
+            }
+            else {
+                w = [0, 0, 0, 0, 100];
+                
+                const vSections = document.querySelectorAll('.v-section');
+                const verticalScroll = scrollY - vh * 2.75;
+                
+                if (verticalScroll < vh * 1) {
+                    vSections[0].style.transform = 'translateY(0)';
+                    vSections[0].style.opacity = 1;
+                    vSections[0].style.zIndex = 10;
+                    vSections[1].style.transform = 'translateY(100vh)';
+                    vSections[2].style.transform = 'translateY(100vh)';
+                    vSections[3].style.transform = 'translateY(100vh)';
+                }
+                else if (verticalScroll < vh * 2) {
+                    const p = (verticalScroll - vh * 1) / (vh * 1);
+                    vSections[0].style.transform = 'translateY(0)';
+                    vSections[0].style.zIndex = 1;
+                    vSections[1].style.transform = `translateY(${(1 - p) * 100}vh)`;
+                    vSections[1].style.opacity = 1;
+                    vSections[1].style.zIndex = 11;
+                    vSections[2].style.transform = 'translateY(100vh)';
+                    vSections[3].style.transform = 'translateY(100vh)';
+                }
+                else if (verticalScroll < vh * 3) {
+                    const p = (verticalScroll - vh * 2) / (vh * 1);
+                    vSections[0].style.transform = 'translateY(0)';
+                    vSections[0].style.zIndex = 1;
+                    vSections[1].style.transform = 'translateY(0)';
+                    vSections[1].style.zIndex = 2;
+                    vSections[2].style.transform = `translateY(${(1 - p) * 100}vh)`;
+                    vSections[2].style.opacity = 1;
+                    vSections[2].style.zIndex = 12;
+                    vSections[3].style.transform = 'translateY(100vh)';
+                }
+                else if (verticalScroll < vh * 4) {
+                    const p = (verticalScroll - vh * 3) / (vh * 1);
+                    vSections[0].style.transform = 'translateY(0)';
+                    vSections[0].style.zIndex = 1;
+                    vSections[1].style.transform = 'translateY(0)';
+                    vSections[1].style.zIndex = 2;
+                    vSections[2].style.transform = 'translateY(0)';
+                    vSections[2].style.zIndex = 3;
+                    vSections[3].style.transform = `translateY(${(1 - p) * 100}vh)`;
+                    vSections[3].style.opacity = 1;
+                    vSections[3].style.zIndex = 13;
+                }
+                else {
+                    vSections[0].style.transform = 'translateY(0)';
+                    vSections[0].style.zIndex = 1;
+                    vSections[1].style.transform = 'translateY(0)';
+                    vSections[1].style.zIndex = 2;
+                    vSections[2].style.transform = 'translateY(0)';
+                    vSections[2].style.zIndex = 3;
+                    vSections[3].style.transform = 'translateY(0)';
+                    vSections[3].style.opacity = 1;
+                    vSections[3].style.zIndex = 13;
+                }
+            }
+            
+            sections.forEach((section, i) => {
+                section.style.width = w[i] + 'vw';
+            });
+            
+            const perfilContent = document.querySelector('.perfil-content');
+            const perfilLabel = document.querySelector('.perfil-label');
+            const projetoContent = document.querySelector('.projeto-content');
+            const projetoLabel = document.querySelector('.projeto-label');
+            const contatoContent = document.querySelector('.contato-content');
+            const contatoLabel = document.querySelector('.contato-label');
+
+            if (scrollY < vh * 0.6) {
+                perfilLabel.classList.add('visible');
+                projetoLabel.classList.add('visible');
+                contatoLabel.classList.add('visible');
+            }
+            
+            if (scrollY >= vh * 0.6) {
+                perfilLabel.classList.remove('visible');
+                perfilContent.classList.add('visible');
+            } else {
+                perfilContent.classList.remove('visible');
+            }
+            
+            if (scrollY >= vh * 0.8) {
+                projetoLabel.classList.remove('visible');
+                projetoContent.classList.add('visible');
+            } else {
+                projetoContent.classList.remove('visible');
+            }
+            
+            if (scrollY >= vh * 1.8) {
+                contatoLabel.classList.remove('visible');
+                contatoContent.classList.add('visible');
+            } else {
+                contatoContent.classList.remove('visible');
+            }
+            
+            const scrollIndicator = document.getElementById('scrollIndicator');
+            const logo = document.getElementById('logo');
+            
+            if (scrollY >= vh * 4) {
+                menuToggle.classList.add('visible');
+                logo.classList.add('visible');
+                menuToggle.classList.add('dark');
+                logo.classList.add('dark');
+                scrollIndicator.classList.add('hidden');
+            } else if (scrollY > 300) {
+                menuToggle.classList.add('visible');
+                logo.classList.add('visible');
+                scrollIndicator.classList.add('hidden');
+                if (scrollY > vh * 3) {
+                    menuToggle.classList.add('dark');
+                    logo.classList.add('dark');
+                } else {
+                    menuToggle.classList.remove('dark');
+                    logo.classList.remove('dark');
+                }
+            } else {
+                menuToggle.classList.remove('visible');
+                logo.classList.remove('visible');
+                scrollIndicator.classList.remove('hidden');
+                menuToggle.classList.remove('dark');
+                logo.classList.remove('dark');
+            }
+            
+
+        }
+        
+        function toggleMenu() {
+            document.getElementById('menuOverlay').classList.toggle('active');
+        }
+        
+        window.addEventListener('scroll', () => {
+            if (!ticking) {
+                requestAnimationFrame(() => {
+                    updateSections();
+                    ticking = false;
+                });
+                ticking = true;
+            }
+        });
+        updateSections();
+    </script>
+</body>
+</html>
