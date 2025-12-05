@@ -1005,38 +1005,247 @@ body::after {
         display: none;
     }
     
+    .container {
+        padding: 0 15px;
+    }
+    
+    .hero {
+        padding: 80px 0 60px;
+        min-height: 100vh;
+    }
+    
     .hero-content h1 {
-        font-size: 32px;
+        font-size: 36px;
+        margin-bottom: 15px;
+        line-height: 1.2;
+    }
+    
+    .hero-content p {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+    
+    .cta-button {
+        padding: 12px 24px;
+        font-size: 14px;
+    }
+    
+    .about {
+        padding: 60px 0;
+    }
+    
+    .about h2 {
+        font-size: 28px;
+        margin-bottom: 40px;
     }
     
     .about-content {
         grid-template-columns: 1fr;
-        gap: 40px;
-        text-align: center;
+        gap: 30px;
     }
     
-    .photo {
-        width: 200px;
+    .about-text {
+        padding: 25px;
+        border-radius: 16px;
+    }
+    
+    .about-text p {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+    
+    .skills h3 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .skill-list {
+        gap: 12px;
+    }
+    
+    .skill-list .skill {
+        padding: 8px 14px;
+        font-size: 12px;
+    }
+    
+    .skill-list .skill img {
+        width: 16px;
+        height: 16px;
+    }
+    
+    .projects {
+        padding: 60px 0;
+    }
+    
+    .projects h2 {
+        font-size: 28px;
+        margin-bottom: 40px;
     }
     
     .project-grid {
         grid-template-columns: 1fr;
+        gap: 25px;
+    }
+    
+    .project-card {
+        flex-direction: column;
+        gap: 20px;
+        padding: 25px;
+        border-radius: 16px;
+    }
+    
+    .project-image {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+    }
+    
+    .project-card h3 {
+        font-size: 20px;
+    }
+    
+    .project-card p {
+        font-size: 14px;
+    }
+    
+    .project-skills {
+        gap: 8px;
+    }
+    
+    .project-skills .skill {
+        padding: 4px 8px;
+        font-size: 10px;
+    }
+    
+    .project-skills .skill img {
+        width: 12px;
+        height: 12px;
+    }
+    
+    .contact {
+        padding: 60px 0;
+    }
+    
+    .contact-header h2 {
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+    
+    .contact-header p {
+        font-size: 16px;
+        margin-bottom: 40px;
     }
     
     .contact-content {
         grid-template-columns: 1fr;
-        gap: 50px;
+        gap: 40px;
     }
     
     .contact-info {
-        gap: 20px;
+        gap: 15px;
     }
     
     .contact-item {
+        padding: 18px;
+        gap: 15px;
+    }
+    
+    .contact-icon-wrapper {
+        width: 45px;
+        height: 45px;
+    }
+    
+    .contact-icon-wrapper svg {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .contact-details h3 {
+        font-size: 16px;
+    }
+    
+    .contact-details a {
+        font-size: 13px;
+    }
+    
+    .contact-form {
+        padding: 25px 20px;
+        border-radius: 16px;
+    }
+    
+    .form {
+        gap: 20px;
+    }
+    
+    .form-group input,
+    .form-group textarea {
+        padding: 14px 16px;
+        font-size: 14px;
+    }
+    
+    .form-group label {
+        font-size: 14px;
+        left: 16px;
+        top: 14px;
+    }
+    
+    .form-group input:focus + label,
+    .form-group input:valid + label,
+    .form-group textarea:focus + label,
+    .form-group textarea:valid + label {
+        font-size: 11px;
+        left: 12px;
+    }
+    
+    .submit-btn {
+        padding: 14px 28px;
+        font-size: 14px;
+    }
+    
+    .footer {
+        padding: 30px 0;
+    }
+    
+    .footer-links {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+    
+    .footer-links a {
+        font-size: 14px;
+    }
+    
+    .footer p {
+        font-size: 12px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 28px;
+    }
+    
+    .about h2,
+    .projects h2,
+    .contact-header h2 {
+        font-size: 24px;
+    }
+    
+    .about-text {
+        padding: 20px;
+    }
+    
+    .project-card {
         padding: 20px;
     }
     
     .contact-form {
-        padding: 30px 20px;
+        padding: 20px 15px;
+    }
+    
+    .contact-item {
+        padding: 15px;
     }
 }
