@@ -58,7 +58,7 @@
                 <div class="home-subtitle" style="padding-left: 1rem;">Portfolio</div>
             </div>
         </section>
-        <section class="section gap-1" id="perfil" onclick="navigateTo(1.0)" style="cursor: pointer;">
+        <section class="section gap-1" id="perfil" style="cursor: default;">
             <div class="perfil-label">PERFIL</div>
             <div class="perfil-content">
                 <h2>Sobre mim</h2>
@@ -127,7 +127,7 @@
                 </div>
             </div>
         </section>
-        <section class="section page-2" id="artsync" onclick="navigateTo(1.5)" style="cursor: pointer;">
+        <section class="section page-2" id="artsync" style="cursor: default;">
             <div class="projeto-label">PROJETOS</div>
             <div class="projeto-content">
                 <a class="github-link" href="https://github.com/DaviTrq/Artsync" target="_blank" rel="noopener">
@@ -238,7 +238,7 @@
                 </div>
             </div>
         </section>
-        <section class="section page-3" onclick="navigateTo(2.5)" style="cursor: pointer;">
+        <section class="section page-3" style="cursor: default;">
             <div class="portfolio-label">PORTFÓLIO</div>
             <div class="portfolio-content">
                 <div class="portfolio-text">
@@ -282,7 +282,7 @@
                 </div>
             </div>
         </section>
-        <section class="section gap-2" onclick="navigateTo(3.0)" style="cursor: pointer;">
+        <section class="section gap-2" style="cursor: default;">
             <div class="contato-label">CONTATO</div>
             <div class="contato-content">
                 <h2>Entre em contato</h2>
@@ -478,38 +478,6 @@
 
         window.addEventListener('scroll', () => {
             if (window.innerWidth > 768) return;
-            
-            clearTimeout(scrollTimeout);
-            const currentScrollY = window.scrollY;
-            const scrollDirection = currentScrollY > lastScrollY ? 1 : -1;
-            lastScrollY = currentScrollY;
-            
-            scrollTimeout = setTimeout(() => {
-                const scrollY = window.scrollY;
-                let closest = 0;
-                let minDist = Infinity;
-                
-                sections.forEach((section, i) => {
-                    const sectionTop = section.offsetTop;
-                    const dist = Math.abs(sectionTop - scrollY);
-                    
-                    if (scrollDirection > 0 && sectionTop >= scrollY && sectionTop - scrollY < minDist) {
-                        minDist = sectionTop - scrollY;
-                        closest = i;
-                    } else if (scrollDirection < 0 && sectionTop <= scrollY && scrollY - sectionTop < minDist) {
-                        minDist = scrollY - sectionTop;
-                        closest = i;
-                    } else if (dist < minDist) {
-                        minDist = dist;
-                        closest = i;
-                    }
-                });
-                
-                window.scrollTo({
-                    top: sections[closest].offsetTop,
-                    behavior: 'smooth'
-                });
-            }, 50);
         });
 
         function scrollToSection(posMultiplier) {
